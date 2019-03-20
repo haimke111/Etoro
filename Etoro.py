@@ -4,7 +4,7 @@ import sys
 #Created by Haimke
 #18.3.2019
 
-server = jenkins.Jenkins('http://localhost:8080/jenkins/', username='haim', password='Tempo20192019!')
+server = jenkins.Jenkins('http://localhost:8080/', username='haim', password='Tempo20192019!')
 user = server.get_whoami()
 
 version = server.get_version()
