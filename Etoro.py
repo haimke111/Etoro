@@ -4,8 +4,8 @@ import sys
 #Created by Haimke
 #18.3.2019
 
-Script_Success_Index = sys.argv[3]
-counter = sys.argv[2]
+Script_Success_Index = int(sys.argv[3])
+counter = int(sys.argv[2])
 if counter % Script_Success_Index == 0:
     server = jenkins.Jenkins('http://localhost:8080/', username='haim', password='Tempo20192019!')
     job_name = server.get_job_name(sys.argv[1])
